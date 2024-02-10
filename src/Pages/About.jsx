@@ -3,7 +3,7 @@ import about from "../data/about.json";
 const About = () => {
   return (
     <div>
-      <div id="about" className="min-h-screen pt-[5rem]">
+      <div id="about" className="min-h-screen pt-[6rem]">
         <h1 className="lg:text-5xl text-2xl bg-gray-100 text-neutral-800  p-[5rem] font-bold">
           {about[0].section}
           <span className="text-7xl p-2 text-yellow-300">.</span>
