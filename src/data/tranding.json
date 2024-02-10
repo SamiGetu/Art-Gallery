@@ -1,0 +1,66 @@
+[
+  { "Title": "Trending Products" },
+  {
+    "img": "images/hero.webp",
+    "type": "Paint",
+    "title": "Art of tefite",
+    "price": "1500.00",
+    "catagori": "paint"
+  },
+  {
+    "img": "images/hero2.webp",
+    "type": "Paint",
+    "title": "Art of tefite",
+    "price": "1500.00",
+    "catagori": "paint"
+  },
+  {
+    "img": "images/hero2.webp",
+    "type": "Paint",
+    "title": "Art of tefite",
+    "price": "1500.00",
+    "catagori": "paint"
+  },
+  {
+    "img": "images/hource.webp",
+    "type": "Artifact",
+    "title": "Art of tefite",
+    "price": "1500.00",
+    "catagori": "artifact"
+  },
+  {
+    "img": "images/hource.webp",
+    "type": "Artifact",
+    "title": "Art of tefite",
+    "price": "1500.00",
+    "catagori": "artifact"
+  },
+  {
+    "img": "images/hource.webp",
+    "type": "Artifact",
+    "title": "Art of tefite",
+    "price": "1500.00",
+    "catagori": "artifact"
+  },
+  {
+    "img": "images/ring.webp",
+    "type": "Jewllary",
+    "title": "Art of tefite",
+    "price": "1500.00",
+    "catagori": "jewllery"
+  },
+  {
+    "img": "images/ring.webp",
+    "type": "Jewllary",
+    "title": "Art of tefite",
+    "price": "1500.00",
+    "catagori": "jewllery"
+  },
+  {
+    "img": "images/ring.webp",
+    "type": "Jewllary",
+    "title": "Art of tefite",
+    "price": "1500.00",
+    "catagori": "jewllery"
+  }
+]

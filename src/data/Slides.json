@@ -1,0 +1,20 @@
+[
+  {
+    "img": "/images/hero3.webp",
+    "header": " New Arrival",
+    "pargraphe": "Original Arts & Wall paints",
+    "card": "/images/hero3.webp"
+  },
+  {
+    "img": "/images/hero.webp",
+    "header": " New Arrival",
+    "pargraphe": "Original Artifacts & Carved Craftes",
+    "card": "/images/hero2.webp"
+  },
+  {
+    "img": "images/ring2.webp",
+    "header": " New Arrival",
+    "pargraphe": "Beautifull Jewllerys & braslates",
+    "card": "images/hero.webp"
+  }
+]

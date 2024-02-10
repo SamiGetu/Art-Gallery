@@ -1,0 +1,7 @@
+[
+  { "Name": "Home", "Path": "/", "key": 1 },
+  { "Name": "About", "Path": "/about", "key": 2 },
+  { "Name": "Gallery", "Path": "/gallery", "key": 3 },
+  { "Name": "Shop", "Path": "/shop", "key": 4 },
+  { "Name": "Contact", "Path": "/contact", "key": 5 }
+]
