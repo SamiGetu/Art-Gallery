@@ -41,7 +41,7 @@ const NavBar = () => {
                 : "h-[0]"
             }`}
           >
-            <h1 className="font-bold text-4xl  absolute top-7 ">Logo</h1>
+            <h1 className="font-bold text-4xl  absolute top-7 left-10">Logo</h1>
             <ul className="flex justify-center space-x-10 text-xl font-medium  pt-10">
               {NavLink.map((link) => (
                 <li
@@ -53,7 +53,7 @@ const NavBar = () => {
               ))}
               <RiMenu4Fill
                 size={"2rem"}
-                className="absolute left-[17rem]"
+                className="absolute right-20 top-10"
                 onClick={() => setopen(true)}
               />
             </ul>
