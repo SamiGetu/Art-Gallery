@@ -53,7 +53,7 @@ const NavBar = () => {
               ))}
               <RiMenu4Fill
                 size={"2rem"}
-                className="absolute right-20 top-9"
+                className="absolute right-20 top-"
                 onClick={() => setopen(true)}
               />
             </ul>

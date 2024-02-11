@@ -8,7 +8,7 @@ import contact from "../data/contact.json";
 function Contact() {
   return (
     <>
-      <div className=" h-screen  bg-white" id="contact">
+      <div className=" h-screen" id="contact">
         <h1 className="lg:text-5xl text-2xl  text-neutral-800  p-[5rem] font-bold">
           {contact[0].section}
           <span className="text-7xl p-2 text-yellow-300">.</span>

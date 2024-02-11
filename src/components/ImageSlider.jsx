@@ -21,8 +21,10 @@ const ImageSlider = () => {
   return (
     <div className="relative">
       <div className="absolute inset-0 flex flex-col items-center justify-center space-y-5 ">
-        <p className="text-3xl font-bold">New Arival</p>
-        <h1 className="text-6xl text-white font-bold">Shop for Wall Art</h1>
+        <p className="md:text-3xl text-2xl font-bold">New Arival</p>
+        <h1 className="md:text-6xl text-3xl text-white font-bold text-center">
+          Shop for Wall Art
+        </h1>
         <Button
           text={"Buy Now"}
           style={"px-10 py-2 bg-white text-black font-bold"}

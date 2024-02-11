@@ -1,5 +1,5 @@
 import Home from "./Pages/Home";
-import Tranding from "./Pages/Tranding";
+import TrendingProducts from "./Pages/TrendingProducts";
 import About from "./Pages/About";
 import Contact from "./Pages/Contact";
 import Footer from "./components/Footer";
@@ -8,9 +8,9 @@ function App() {
   return (
     <>
       <Home />
-      <Tranding />
-      <Gallery />
+      <TrendingProducts />
       <About />
+      <Gallery />
       <Contact />
       <Footer />
     </>

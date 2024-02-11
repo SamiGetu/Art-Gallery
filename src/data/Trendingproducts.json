@@ -1,0 +1,30 @@
+[
+  {
+    "img": "images/hero.webp",
+    "type": "Paint",
+    "title": "Art of tefite",
+    "price": "1500.00",
+    "catagori": "artifact"
+  },
+  {
+    "img": "images/ring2.webp",
+    "type": "Paint",
+    "title": "Art of tefite",
+    "price": "1500.00",
+    "catagori": "paint"
+  },
+  {
+    "img": "images/hero3.webp",
+    "type": "Paint",
+    "title": "Art of tefite",
+    "price": "1500.00",
+    "catagori": "jewllery"
+  },
+  {
+    "img": "images/hero2.webp",
+    "type": "Paint",
+    "title": "Art of tefite",
+    "price": "1500.00",
+    "catagori": "paint"
+  }
+]
