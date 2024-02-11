@@ -6,7 +6,6 @@ import {
 } from "react-icons/ti";
 import { Link } from "react-router-dom";
 import footer from "../data/footer.json";
-
 export default function Footer() {
   return (
     <>
