@@ -14,11 +14,7 @@ import {
 import Gallery from "./Pages/Gallery/Gallery";
 import PageNotFound from "./Pages/PageNotFound.jsx";
 import Shop from "./Pages/shop/Shop.jsx";
-import Home from "./Pages/Home.jsx";
-import About from "./Pages/About.jsx";
-import Contact from "./Pages/Contact.jsx";
-import Footer from "./components/Footer.jsx";
-import Tranding from "./Pages/Tranding.jsx";
+import App from "./App.jsx";
 
 const ScrollToTop = () => {
   const navigate = useNavigate();
@@ -45,14 +41,10 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: (
-      <>
+      <React.Fragment>
         <ScrollToTop />
-        <Home />
-        <Tranding />
-        <About />
-        <Contact />
-        <Footer />
-      </>
+        <App />
+      </React.Fragment>
     ),
   },
   {
