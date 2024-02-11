@@ -10,7 +10,7 @@ const About = () => {
         </h1>
 
         <div className="flex items-center justify-center">
-          <div className="max-w-6xl mx-auto p-8 rounded-lg">
+          <div className="max-w-6xl mx-auto p-8 rounded-xl">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-40">
               <div className="order-2 ">
                 <img
