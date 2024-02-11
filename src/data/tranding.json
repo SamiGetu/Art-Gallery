@@ -1,5 +1,4 @@
 [
-  { "Title": "Trending Products" },
   {
     "img": "images/hero.webp",
     "type": "Paint",
@@ -62,5 +61,6 @@
     "title": "Art of tefite",
     "price": "1500.00",
     "catagori": "jewllery"
-  }
+  },
+  { "Title": "Trending Products" }
 ]

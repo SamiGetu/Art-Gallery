@@ -26,7 +26,7 @@ export default function Shop() {
         Header={"shop"}
       />
 
-      <div className="flex justify-center gap-20 mt-20">
+      <div className="flex flex-wrap justify-center gap-20 mt-20">
         <Button
           text={"All"}
           style={
