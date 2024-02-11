@@ -5,7 +5,7 @@ import {
   TiSocialYoutube,
 } from "react-icons/ti";
 import { Link } from "react-router-dom";
-import footer from "../data/footer.json";
+import Footeer from "../data/Footeer.json";
 export default function Footer() {
   return (
     <>
@@ -28,7 +28,7 @@ export default function Footer() {
             </div>
             <div>
               <ul className="flex items-center justify-center space-x-5">
-                {footer.map((link) => (
+                {Footeer.map((link) => (
                   <>
                     <li className="cursor-pointer  relative navLink hover:text-black">
                       <Link
