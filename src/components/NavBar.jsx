@@ -37,7 +37,7 @@ const NavBar = () => {
           <nav
             className={`${
               change
-                ? "h-[6.5rem] bg-white text-black font-medium fixed w-full z-10 duration-500"
+                ? "h-[6rem] bg-white text-black font-medium fixed w-full z-10 duration-500"
                 : "h-[0]"
             }`}
           >

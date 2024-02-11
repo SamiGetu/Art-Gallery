@@ -3,8 +3,8 @@ import about from "../data/about.json";
 const About = () => {
   return (
     <div>
-      <div id="about" className="min-h-screen pt-[6rem]">
-        <h1 className="lg:text-5xl text-2xl bg-gray-100 text-neutral-800  p-[5rem] font-bold">
+      <div id="about" className="min-h-screen">
+        <h1 className="lg:text-5xl text-2xl text-black  p-[5rem] font-bold">
           {about[0].section}
           <span className="text-7xl p-2 text-yellow-300">.</span>
         </h1>
@@ -21,7 +21,7 @@ const About = () => {
                 />
               </div>
               <div className="order-1 flex flex-col justify-center">
-                <h1 className="text-4xl font-bold text-neutral-500">
+                <h1 className="text-4xl font-bold text-black">
                   {about[1].title}
                   <hr className="my-4" />
                   <p className="md:text-lg text-sm text-black font-medium">

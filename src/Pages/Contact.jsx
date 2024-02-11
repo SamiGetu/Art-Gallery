@@ -48,9 +48,9 @@ function Contact() {
               </div>
               <div>
                 <Button
-                  text={"Contact"}
+                  text={"Send"}
                   style={
-                    "lg:px-[30rem] px-[8rem] py-2 bg-black border-[0.1px] text-white hover:bg-white hover:text-black duration-500 "
+                    "lg:px-[30rem] px-[8rem] py-2 bg-black/70  text-white hover:bg-white hover:text-black hover:font-bold duration-500 "
                   }
                 />
               </div>

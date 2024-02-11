@@ -15,7 +15,7 @@ export default function Tranding() {
 
   return (
     <>
-      <div className="pt-[10rem] bg-white">
+      <div className="pt-[10rem]">
         <h1 className="text-center text-black md:text-5xl text-2xl p-5 font-medium font-serif">
           {tranding[9].Title}
         </h1>
@@ -43,14 +43,17 @@ export default function Tranding() {
             onClick={() => filterResult("jewllery")}
           />
         </div>
-        <div className="flex flex-wrap justify-center gap-5 ">
+        <div className="flex flex-wrap justify-center gap-7 ">
           {data.slice(0, 3).map((product) => (
             <>
               <ShopCard
                 image={product.img}
                 effect="absolute w-full h-full bg-white/80 flex items-center justify-center -bottom-[40rem] group-hover:bottom-[-10rem]  opacity-0  group-hover:opacity-100 transition-all duration-700 m-10"
-                size="bg-gray-200  md:w-[25rem] w-[18rem] md:h-[30rem] h-[25rem] relative overflow-hidden flex justify-center items-center"
-                imgSize="md:w-[18rem] w-[15rem] md:h-[25rem] h-[20rem]  object-cover grayscale-0"
+                size="bg-gray-200  md:w-[28rem] w-[18rem] md:h-[25rem] h-[25rem] relative overflow-hidden flex justify-center items-center"
+                imgSize="md:w-[20rem] w-[15rem] md:h-[20rem] h-[20rem]  object-cover grayscale-0"
+                price={product.price}
+                desc={product.title}
+                name={product.type}
                 button={
                   <Link to={"/shop"}>
                     <Button

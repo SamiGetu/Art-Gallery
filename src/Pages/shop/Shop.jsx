@@ -1,19 +1,31 @@
-/* eslint-disable no-undef */
-/* eslint-disable no-unused-vars */
+import { useState } from "react";
 import NavBar from "../../components/NavBar";
 import Hero from "../../components/Hero";
 import ShopCard from "../../components/ShopCard";
 import Button from "../../components/Button";
 import shop from "../../data/shop.json";
 import Footer from "../../components/Footer";
-import { useState } from "react";
+import Card from "../../components/Card";
 
 export default function Shop() {
+  const itemsPerPage = 9; // Number of items to display per page
+  const [currentPage, setCurrentPage] = useState(1);
+
   const [data, setdata] = useState(shop);
 
   const filterResult = (catitem) => {
     const result = shop.filter((curdata) => curdata.Catgory === catitem);
     setdata(result);
+    setCurrentPage(1); // Reset to the first page when filtering
+  };
+
+  // Calculate the index of the first and last item to display on the current page
+  const indexOfLastItem = currentPage * itemsPerPage;
+  const indexOfFirstItem = indexOfLastItem - itemsPerPage;
+  const currentItems = data.slice(indexOfFirstItem, indexOfLastItem);
+
+  const paginate = (pageNumber) => {
+    setCurrentPage(pageNumber);
   };
 
   return (
@@ -25,41 +37,59 @@ export default function Shop() {
         }
         Header={"shop"}
       />
-
-      <div className="flex flex-wrap justify-center gap-20 mt-20">
-        <Button
-          text={"All"}
-          style={
-            "text-neutral-700 text-md border-[0.1px] border-neutral-800/20 px-7 py-2 rounded-full font-medium hover:bg-black hover:text-white"
-          }
-          onClick={() => setdata(shop)}
-        />
-        <Button
-          text={"Artifacts"}
-          style={
-            "text-neutral-700 text-md border-[0.1px] border-neutral-800/20 px-7 py-2 rounded-full font-medium hover:bg-black hover:text-white"
-          }
-          onClick={() => filterResult("artifact")}
-        />
-        <Button
-          text={"Paint"}
-          style={
-            "text-neutral-700 text-md border-[0.1px] border-neutral-800/20 px-7 py-2 rounded-full font-medium hover:bg-black hover:text-white"
-          }
-          onClick={() => filterResult("paint")}
-        />
-        <Button
-          text={"Jewllery"}
-          style={
-            "text-neutral-700 text-md border-[0.1px] border-neutral-800/20 px-7 py-2 rounded-full font-medium hover:bg-black hover:text-white"
-          }
-          onClick={() => filterResult("jewllery")}
-        />
+      <div className="flex  justify-center items-center">
+        <div className="flex flex-col items-start p-4 md:p-8">
+          <h1 className="text-black mb-4 text-2xl md:text-3xl lg:text-4xl">
+            All Our Products
+          </h1>
+          <div className="flex flex-wrap gap-2 md:gap-5 justify-center md:justify-end mb-4">
+            <Button
+              text={"All"}
+              style={
+                "text-black md:px-8 px-3 md:py-2 py-1  border-[0.1px] border-gray-400 rounded-full  font-bold"
+              }
+              onClick={() => setdata(shop)}
+            />
+            <Button
+              text={"Artifacts"}
+              style={
+                "text-black md:px-8 px-3 md:py-2 py-1  border-[0.1px] border-gray-400 rounded-full  font-bold"
+              }
+              onClick={() => filterResult("artifact")}
+            />
+            <Button
+              text={"Paint"}
+              style={
+                "text-black md:px-8 px-3 md:py-2 py-1  border-[0.1px] border-gray-400 rounded-full  font-bold"
+              }
+              onClick={() => filterResult("paint")}
+            />
+            <Button
+              text={"Jewelry"}
+              style={
+                "text-black md:px-8 px-3 md:py-2 py-1  border-[0.1px] border-gray-400 rounded-full  font-bold"
+              }
+              onClick={() => filterResult("jewllery")}
+            />
+          </div>
+          <div className="lg:w-[20%] w-[50%] absolute flex m-20  md:mt-[13rem] mt-[16rem] items-center flex-col  text-center md:text-7xl text-4xl font-bold">
+            <p>
+              Get UpTo <span className="text-yellow-500">25% off</span> Your
+              Order
+            </p>
+            <p className="text-xl text-white">By Only Ordering Online</p>
+          </div>
+          <Card
+            size={"w-full md:w-[90rem] h-[25rem]"}
+            imgstyle={"w-full h-[25rem] object-cover"}
+            image={"images/hero.webp"}
+          />
+        </div>
       </div>
 
       <div>
         <div className="flex justify-center flex-wrap gap-4 pl-[10rem] pr-[10rem]">
-          {data.map((product, index) => (
+          {currentItems.map((product, index) => (
             <ShopCard
               key={index}
               image={product.img}
@@ -78,7 +108,25 @@ export default function Shop() {
             />
           ))}
         </div>
+        <div className="flex justify-center mt-4 p-20">
+          {Array.from(
+            { length: Math.ceil(data.length / itemsPerPage) },
+            (_, index) => (
+              <Button
+                key={index}
+                text={index + 1}
+                style={`mx-2 ${
+                  currentPage === index + 1
+                    ? "bg-black text-white"
+                    : "bg-gray-300"
+                } px-2 py-1 `}
+                onClick={() => paginate(index + 1)}
+              />
+            )
+          )}
+        </div>
       </div>
+
       <Footer />
     </>
   );
