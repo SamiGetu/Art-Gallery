@@ -37,7 +37,7 @@ const NavBar = () => {
           <nav
             className={`${
               change
-                ? "h-[6rem] bg-white text-black font-medium fixed w-full z-10 duration-500"
+                ? "h-[6.5rem] bg-white text-black font-medium fixed w-full z-10 duration-500"
                 : "h-[0]"
             }`}
           >
@@ -53,7 +53,7 @@ const NavBar = () => {
               ))}
               <RiMenu4Fill
                 size={"2rem"}
-                className="absolute right-20 top-10"
+                className="absolute right-20 top-9"
                 onClick={() => setopen(true)}
               />
             </ul>
