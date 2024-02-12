@@ -9,7 +9,7 @@ import Footeer from "../data/Footeer.json";
 export default function Footer() {
   return (
     <>
-      <footer className=" pt-[10rem]">
+      <footer className=" pt-[30rem]">
         <div className=" p-4 py-6 lg:py-8">
           <div className=" space-y-[3rem]">
             <div className="flex text-2xl text-neutral-900 hover:text-black gap-5 mt-4 justify-center items-center sm:mt-0 space-x-3">

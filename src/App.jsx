@@ -4,6 +4,7 @@ import About from "./Pages/About";
 import Contact from "./Pages/Contact";
 import Footer from "./components/Footer";
 import Gallery from "./Pages/Gallery";
+
 function App() {
   return (
     <>

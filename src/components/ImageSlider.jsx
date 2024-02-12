@@ -30,13 +30,12 @@ const ImageSlider = () => {
           style={"px-10 py-2 bg-white text-black font-bold"}
         />
       </div>
-      <div className="bg-black/70">
-        <img
-          src={imageSlider[currentImage]}
-          alt={`Image ${currentImage + 1}`}
-          className="w-full h-[95vh] object-cover bg-center mix-blend-overlay"
-        />
-      </div>
+
+      <img
+        src={imageSlider[currentImage]}
+        alt={`Image ${currentImage + 1}`}
+        className="w-full h-[95vh] object-cover bg-center"
+      />
 
       <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
         {imageSlider.map((_, index) => (

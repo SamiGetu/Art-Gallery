@@ -38,7 +38,7 @@ const NavBar = () => {
             className={`${
               change
                 ? "h-[6rem] bg-white text-black font-medium fixed w-full z-10 duration-500"
-                : "h-[0]"
+                : "h-0"
             }`}
           >
             <h1 className="font-bold text-4xl  absolute top-7 left-10">Logo</h1>
